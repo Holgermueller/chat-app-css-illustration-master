@@ -1,0 +1,80 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  width: 100vw;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.smartphone {
+  position: relative;
+  width: 70%;
+  height: 640px;
+  margin: 5% auto;
+  border: 16px hsl(0, 0%, 100%) solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+.smartphone:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+.smartphone:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+.phone-content {
+  background-color: hsl(270, 20%, 96%);
+}
+
+.content-header {
+  background: linear-gradient(hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+
+.reply {
+  color: hsl(270, 20%, 96%);
+}
+
+.copy-section {
+  text-align: center;
+}
+
+.attribution {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: relative;
+  font-size: 11px;
+  text-align: center;
+  padding: 4px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
