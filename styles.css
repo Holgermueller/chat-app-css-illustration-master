@@ -25,6 +25,7 @@ main {
   border-bottom-width: 16px;
   border-radius: 36px;
   background-color: transparent;
+  box-shadow: 5px 5px 23px hsl(271, 36%, 24%);
 }
 
 .smartphone:before {
@@ -102,8 +103,9 @@ h2,
   width: 50%;
   font-size: 12px;
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
+
 .chat p:nth-child(1),
 .chat p:nth-child(2),
 .chat p:nth-child(6) {
@@ -115,6 +117,7 @@ h2,
 .chat p:nth-child(4),
 .chat p:nth-child(5) {
   background-color: hsl(0, 0%, 100%);
+  color: hsl(271, 36%, 24%);
   margin-left: auto;
   border-bottom-right-radius: 5px;
 }
@@ -144,25 +147,35 @@ h2,
   );
   width: 65%;
   font-size: 12px;
-  border-radius: 10px;
-  color: hsl(0, 0%, 100%);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 5px;
   display: flex;
+  align-items: center;
 }
 
 .price-select p {
   padding: 0;
   margin: 0;
-  text-align: left;
+  text-align: right;
   width: max-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%) !important;
 }
 
 input[type="radio"] {
-  width: max-content;
-  border-color: hsl(289, 100%, 72%);
-  background-color: transparent;
+  appearance: none;
+  vertical-align: baseline;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid hsl(289, 100%, 72%);
 }
 
 label {
+  margin-right: auto;
   color: hsl(289, 100%, 72%);
 }
 
@@ -171,6 +184,7 @@ label {
   margin: 8px auto;
   background-color: hsl(0, 0%, 100%);
   color: hsl(270, 20%, 96%);
+  font-size: 20px;
   padding: 8px;
   border-radius: 36px;
   display: flex;
