@@ -15,17 +15,32 @@ main {
   flex-direction: column;
 }
 
+.box {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  margin-left: -50%;
+  background: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  background-color: hsl(264, 100%, 61%);
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
 .smartphone {
   position: relative;
-  width: 80%;
+  width: 75%;
   height: max-content;
-  margin: 5% auto;
+  margin: 20% auto;
   border: 16px hsl(0, 0%, 100%) solid;
   border-top-width: 40px;
   border-bottom-width: 16px;
   border-radius: 36px;
   background-color: transparent;
-  box-shadow: 5px 5px 23px hsl(271, 36%, 24%);
+  box-shadow: 5px 5px 23px hsl(255, 2%, 67%);
 }
 
 .smartphone:before {
@@ -38,7 +53,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #333;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .phone-content {
@@ -47,17 +62,15 @@ main {
 }
 
 .content-header {
-  padding: 20px;
+  padding: 10px;
   background: linear-gradient(
     to right,
     hsl(264, 100%, 61%),
     hsl(293, 100%, 63%)
   );
-  color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: row;
   align-items: center;
-
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -69,18 +82,23 @@ main {
   width: 40px;
 }
 
+.name-container {
+  margin-left: 4px;
+}
+
 h2,
 .content-header p {
   margin: 0 auto;
   font-size: 14px;
+  color: hsl(276, 100%, 81%);
+}
+
+h2 {
+  font-weight: 700;
 }
 
 .content-header p {
   color: hsl(270, 20%, 96%);
-}
-
-.name-container {
-  margin-left: 4px;
 }
 
 .content-header button {
@@ -110,14 +128,14 @@ h2,
 .chat p:nth-child(2),
 .chat p:nth-child(6) {
   background-color: hsla(264, 100%, 61%, 0.1);
-  color: hsl(293, 100%, 63%);
+  color: hsl(276, 55%, 52%);
   border-bottom-left-radius: 5px;
 }
 
 .chat p:nth-child(4),
 .chat p:nth-child(5) {
   background-color: hsl(0, 0%, 100%);
-  color: hsl(271, 36%, 24%);
+  color: hsl(271, 15%, 43%);
   margin-left: auto;
   border-bottom-right-radius: 5px;
 }
@@ -176,19 +194,21 @@ input[type="radio"] {
 
 label {
   margin-right: auto;
-  color: hsl(289, 100%, 72%);
+  color: hsl(0, 0%, 100%);
 }
 
 .reply-interface {
-  width: 85%;
+  width: 90%;
   margin: 8px auto;
   background-color: hsl(0, 0%, 100%);
-  color: hsl(270, 20%, 96%);
-  font-size: 20px;
-  padding: 8px;
+  color: hsl(206, 6%, 79%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 8px 6px 10px;
   border-radius: 36px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .reply-interface button {
@@ -197,11 +217,14 @@ label {
   background-color: hsl(271, 36%, 24%);
   color: hsl(0, 0%, 100%);
   width: 50px;
+  height: 50px;
   font-size: 20px;
   margin-bottom: none;
 }
 
 .copy-section {
+  width: 80%;
+  margin: 5% auto;
   text-align: center;
 }
 
@@ -212,6 +235,8 @@ h1 {
 
 .copy-section p {
   font-size: 16px;
+  line-height: 24px;
+  color: hsl(270, 7%, 64%);
 }
 
 .attribution {
