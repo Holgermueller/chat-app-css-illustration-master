@@ -39,7 +39,6 @@ main {
   border-top-width: 40px;
   border-bottom-width: 16px;
   border-radius: 36px;
-  background-color: transparent;
   box-shadow: 5px 5px 23px hsl(255, 2%, 67%);
 }
 
@@ -58,7 +57,9 @@ main {
 
 .phone-content {
   background-color: hsl(270, 20%, 96%);
-  border-radius: 36px;
+  border-radius: 15px;
+  height: 100%;
+  padding-bottom: 8px;
 }
 
 .content-header {
@@ -250,4 +251,32 @@ h1 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    height: 100vh;
+  }
+
+  .box {
+    width: 40%;
+    margin-left: 0;
+  }
+
+  main {
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    width: 65%;
+  }
+
+  .phone-section,
+  .copy-section {
+    width: 50%;
+  }
+
+  .copy-section {
+    text-align: left;
+    margin-left: 40px;
+  }
 }
